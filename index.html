@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
 
-    <div class="container">
+  <div class="container">
 
-        <header>
-            <!-- Image and text -->
-            <nav class="navbar navbar-light bg-light">
-              <a class="navbar-brand" href="#">
-                <i class="fas fa-mail-bulk"></i>
-                ZipCloud
-              </a>
-            </nav>
-        </header>
+    <header>
 
-        <div class="input-group mt-5 mb-3">
-          <input type="text" id="searhe-word" class="form-control" placeholder="郵便番号を入れてください" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button" id="search-btn">検索</button>
-          </div>
-        </div>
+      <!-- Image and text -->
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-map-marked-alt"></i>
+          ZipCloud
+        </a>
+      </nav>
 
-        <h2 class="bg-primary mt-3 p-3 text-white rounded" style="font-size: 1rem;">検索結果</h2>
-        
-        <table class="table  table-dark  table-striped">
-          <tbody >
-            <tr>
-              <th>都道府県</th>
-              <td id="prefecture">検索結果の都道府県</td>
-            </tr>
-            <tr>
-              <th>市区町村</th>
-              <td id="city">検索結果の市区町村</td>
-            </tr>
-            <tr>
-              <th>住所</th>
-              <td id="add">検索結果の住所</td>
-            </tr>
-          </tbody>
-        </table>
+    </header>
 
+    <div class="input-group mt-5">
+      <input type="text" id="search-word" class="form-control" placeholder="郵便番号を入れてください" aria-label="郵便番号を入れてください" aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="search-btn">検索</button>
+      </div>
     </div>
-    
+
+    <h2 class="bg-primary mt-3 p-3 text-white rounded mb-4" style="font-size: 1rem;">検索結果</h2>
+
+    <table class="table table-dark table-striped">
+      <tbody>
+        <tr>
+          <th>都道府県</th>
+          <td id="prefecture">検索結果の都道府県</td>
+        </tr>
+        <tr>
+          <th>市区町村</th>
+          <td id="city">検索結果の市区町村</td>
+        </tr>
+        <tr>
+          <th>住所</th>
+          <td id="address">検索結果の住所</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="./assets/js/app.js"></script>
-    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.loadingoverlay/latest/loadingoverlay.min.js"></script>
+  <script src="./assets/js/app.js"></script>
 </body>
 </html>
